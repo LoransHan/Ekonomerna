@@ -11,7 +11,7 @@
         width: 70%;
     }
 
-    #header-section .row{
+    .header-section .row{
         max-width: 80%;
     }
 
@@ -48,7 +48,7 @@
 
 }*/
 
-    #header-section .row{
+    .header-section .row{
         max-width: 90%;
     }
 
@@ -138,7 +138,7 @@
     .items_featured_services {
         flex-direction: column; 
     }
-    #header-section .row,
+    .header-section .row,
     #header-team .row{
         max-width: 100%;
     }
@@ -230,10 +230,10 @@
 
         width: 90%;
     }
-    #about .row {
+    .about-section .row {
         width: 90%;
     }
-    #about .long-copy {
+    .about-section .long-copy {
         text-align: center;
     }
     .items_services {
@@ -321,7 +321,7 @@
         max-width: 95%;
 
     }
-#header-section #logo h1,
+.header-section #logo h1,
 #header-team #logo h1 {                                                               
     font-size: 14px;
 

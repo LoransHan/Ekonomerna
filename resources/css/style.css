@@ -195,7 +195,7 @@ input[type=submit] {
 /* HEADER */
 /*-----------------------------------------------------*/
 
-#header-section {
+.header-section {
     background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url(img/office1.jpg);
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/office1.jpg);
     background-size: cover;
@@ -205,7 +205,7 @@ input[type=submit] {
 }
 
 
-#header-section .row,
+.header-section .row,
 #header-team .row
 {
     max-width: 70%;
@@ -254,13 +254,13 @@ Nya testing
 */
 
 
-#header-section #logo {
+.header-section #logo {
     float: left;
 }
-#header-team #logo {                                                                 /* fixa denna också*/
+.header-team #logo {                                                                 /* fixa denna också*/
     float: left;
 }
-#header-section #logo h1,
+.header-section #logo h1,
 #header-team #logo h1 {                                                                 /* fixa denna också*/
     font-size: 34px;
     margin-top: 40px;
@@ -285,7 +285,7 @@ Nya testing
     border-bottom: none;
 }
 
-#header-section #logo h1 a, #header-section #logo h1 a:hover,
+.header-section #logo h1 a, .header-section #logo h1 a:hover,
 #header-team #logo h1 a{                                                                 /* fixa denna också*/
     color: #fff;
     padding-left: 10px;
@@ -293,17 +293,17 @@ Nya testing
 }
 
 @media (max-width: 768px) {
-    #header-section #logo h1,
+    .header-section #logo h1,
     #header-team #logo h1{                                                                 /* fixa denna också*/
         font-size: 28px;
     }
-    #header-section #logo img {
+    .header-section #logo img {
         max-height: 40px;
     }  
 }
 
 @media (min-width: 1024px) {
-    #header-section #logo,
+    .header-section #logo,
     #header-team #logo {                                                                /* fixa denna också*/
         padding-left: 60px;
     }
@@ -540,7 +540,7 @@ Slut test logo
 
 /* About Us Section
 --------------------------------*/
-#about {
+.about-section {
     /* background: url("../img/about-bg.jpg") center top no-repeat fixed;*/
     background-color: #969696;
     background-size: cover;
@@ -548,14 +548,14 @@ Slut test logo
     position: relative;
 }
 
-#about .long-copy{
+.about-section .long-copy{
     text-align: center;
 }
-#about .row {
+.about-section .row {
     width: 95%;
 }
 
-#about::before {
+.about-section::before {
     content: '';
     position: absolute;
     left: 0;
@@ -566,27 +566,27 @@ Slut test logo
     z-index: 9;
 }
 
-#about .container {
+.about-section .container {
     position: relative;
     z-index: 10;
 }
 
-#about .about-col {
+.about-section .about-col {
     background: #fff;
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
     margin-bottom: 20px;
 }
 
-#about .about-col .img {
+.about-section .about-col .img {
     position: relative;
 }
 
-#about .about-col .img img {
+.about-section .about-col .img img {
     border-radius: 4px 4px 0 0;
 }
 
-#about .about-col .icon {
+.about-section .about-col .icon {
     width: 64px;
     height: 64px;
     padding-top: 8px;
@@ -601,22 +601,22 @@ Slut test logo
     transition: 0.3s;
 }
 
-#about .about-col i {
+.about-section .about-col i {
     font-size: 36px;
     line-height: 1;
     color: #fff;
     transition: 0.3s;
 }
 
-#about .about-col:hover .icon {
+.about-section .about-col:hover .icon {
     background-color: #fff;
 }
 
-#about .about-col:hover i {
+.about-section .about-col:hover i {
     color: #e67e22;
 }
 
-#about .about-col h2 {
+.about-section .about-col h2 {
     color: #000;
     text-align: center;
     font-weight: 700;
@@ -625,15 +625,15 @@ Slut test logo
     margin: 40px 0 12px 0;
 }
 
-#about .about-col h2 a {
+.about-section .about-col h2 a {
     color: #000;
 }
 
-#about .about-col h2 a:hover {
+.about-section .about-col h2 a:hover {
     color: #e67e22;
 }
 
-#about .about-col p {
+.about-section .about-col p {
     font-size: 14px;
     line-height: 24px;
     color: #333;
@@ -663,13 +663,12 @@ Slut test logo
     height: auto;
 }
 
-#about .about-col .img {
+.about-section .about-col .img {
     position: relative;
 }
 
-#about .about-col .img img {
+.about-section .about-col .img img {
     border-radius: 4px 4px 0 0;
-
 }
 
 
@@ -870,32 +869,32 @@ margin: 0 auto;
     margin-bottom: 30px;
 }
 /*-----------------------------------------------------*/
-/* MEALS */
+/* Section Galerie */
 /*-----------------------------------------------------*/
-.section-meals {
+.section-galerie {
     padding: 0;
 }
 
-.meals-showcase {
+.galerie-showcase {
     list-style: none;
     width: 100%;
 
 }
 
-.meals-showcase li{
+.galerie-showcase li{
     display: block;
     float: left;
     width: 25%;
 }
 
-.meal-photo {
+.galerie-photo {
     width: 100%;
     margin: 0;
     overflow: hidden;
     background-color: #000;
 }
 
-.meal-photo img {
+.galerie-photo img {
     opacity: 0.7;
     width: 100%;
     height: auto;
@@ -907,7 +906,7 @@ margin: 0 auto;
     transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
-.meal-photo img:hover {
+.galerie-photo img:hover {
     opacity: 1;
     -webkit-transform: scale(1.04);
     transform: scale(1.04);
