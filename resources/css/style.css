@@ -214,7 +214,7 @@ input[type=submit] {
 
 
 #header-team{
-   /* position: fixed;*/
+    /* position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -222,7 +222,6 @@ input[type=submit] {
     transition: all 0.5s;
     /* box-shadow: 0 2px 2px #efefef; */
     z-index: 9999;
-
 }
 .hero-text-box {
     position: absolute;
@@ -257,8 +256,8 @@ Nya testing
 .header-section #logo {
     float: left;
 }
-.header-team #logo {                                                                 /* fixa denna också*/
-    float: left;
+#header-team #logo {                                                                 /* fixa denna också*/
+    float: left;  
 }
 .header-section #logo h1,
 #header-team #logo h1 {                                                                 /* fixa denna också*/
@@ -318,9 +317,9 @@ Slut test logo
     float: right;
     list-style: none;
     margin-top: 55px;
-    /* margin-right: 400px;*/
 
 }
+
 
 .nav__tocustom{
     margin-top: 18px;
@@ -427,6 +426,7 @@ Slut test logo
 }
 
 .featured-services i {
+    /*color: #e67e22;*/
     color: #e67e22;
     font-size: 48px;
     display: inline-block;
@@ -1132,7 +1132,7 @@ input[type=checkbox] {
     padding: 60px 0;
     background-color: #fff;
     */
-        background-color: #f8f8f8;
+    background-color: #f8f8f8;
     background-size: cover;
     padding: 60px 0 40px 0;
     position: relative;
@@ -1269,10 +1269,92 @@ input[type=checkbox] {
 /*-----------------------------------------------------*/
 
 footer {
-    background-color: #333; 
-    padding: 50px;
-    font-size: 80%;
+    background: #000;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;
 }
+
+.footer-top {
+    background: #111;
+    padding: 60px 0 30px 0;
+}
+.footer-top h3 {
+    font-size: 34px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 10px;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-left: 4px solid #e67e22;
+    text-transform: none;
+}
+.footer-top p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #eee;
+    text-align: left
+}
+.footer-top .footer-contact {
+    margin-bottom: 30px;
+    float: right;
+    margin-top: -50px;
+
+}
+.footer-top .footer-contact p {
+    line-height: 26px;
+}
+.footer-top h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+    text-align: left;
+}
+.footer-top h4::before, 
+.footer-top h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+}
+
+.footer-top h4::before {
+    right: 0;
+    background: #555;
+}
+
+.footer-top h4::after {
+    background: #e67e22;
+    width: 60px;
+}
+
+.footer-top .testa{
+    text-align: center;
+    width: 30%;
+}
+.slinks{
+    margin-left: 165px;
+}
+
+.footer-top .footer-info{
+    margin-left: 348px; 
+    float: left;
+}
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+
 .footer-nav {
     list-style: none;
     float: left;
@@ -1338,12 +1420,6 @@ footer {
     color: #517fa4;
 }
 
-footer p {
-    color: #888;
-    text-align: center;
-    margin-top: 20px;
-}
-
 /*-----------------------------------------------------*/
 /* Team Page */
 /*-----------------------------------------------------*/
@@ -1380,10 +1456,6 @@ footer p {
     max-width: 100%;
     height: auto;
 }
-
-/*
-tes
-*/
 
 #team .member {
     text-align: center;
@@ -1475,6 +1547,10 @@ tes
 .js--wp-3 .animated{
     opacity: 1;
 }
+
+
+
+
 
 
 
