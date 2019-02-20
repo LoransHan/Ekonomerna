@@ -16,6 +16,10 @@
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/animate/animate.min.css" rel="stylesheet">
 
+      <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="form/form.css" type="text/css">
+
+
         <title>Ekonomerna</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
@@ -458,45 +462,93 @@ Contact Section
                 <h2>Vi är glada att höra från dig</h2>            
             </div>
             <div class="row">
-                <form method="post" action="mailer.php" class="contact-form">
-                    <div class="row">
 
-                        <div class="form-messages success">
-                            Thank you! Your message has been sent.
-                        </div>
-                        <div class="col span-1-of-3">
-                            <label for="name">Namn</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
-                        </div>
-                    </div>
+                <div class="inner contact">
+                    <!-- Form Area -->
+                    <div class="contact-form">
+                        <!-- Form -->
+                        <form id="contact-us" method="POST" action="https://formspree.io/lorans.hanna@hotmail.com">
+                            <!-- Left Inputs -->
+                            <div class="col span-1-of-3 wow animated slideInLeft messagefields" data-wow-delay=".5s">
+                                <!-- Name -->
+                                <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                                <div class="status-name"></div>
+                                <!-- Email -->
+                                <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                                <!-- Subject -->
+                                <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                            </div><!-- End Left Inputs -->
+                            <!-- Right Inputs -->
+                            <div class="col span-1-of-2 wow animated slideInRight messagebox" data-wow-delay=".5s">
+                                <!-- Message -->
+                                <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                            </div><!-- End Right Inputs -->
 
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Skicka oss ett meddelande</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="your message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
-                        </div>
-                    </div>
-                </form>
+                            <div class="status">
+
+                            </div>
+                            <!-- Bottom Submit -->
+                            <div class="relative fullwidth col span-1-of-2 submbutton">
+                                <!-- Send Button -->
+                                <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> 
+                            </div><!-- End Bottom Submit -->
+                            <!-- Clear -->
+                            <div class="clear"></div>
+                        </form>
+
+                        <!-- Your Mail Message -->
+                        <!--
+<div class="mail-message-area">
+
+<div class="alert gray-bg mail-message not-visible-message">
+<strong>Thank You !</strong> Your email has been delivered.
+</div>
+</div>
+-->
+                    </div><!-- End Contact Form Area -->
+                </div><!-- End Inner -->
+
+                <!--
+<form method="post" action="mailer.php" class="contact-form">
+<div class="row">
+
+<div class="form-messages success">
+Thank you! Your message has been sent.
+</div>
+<div class="col span-1-of-3">
+<label for="name">Namn</label>
+</div>
+<div class="col span-2-of-3">
+<input type="text" name="name" id="name" placeholder="Your name" required>
+</div>
+</div>
+<div class="row">
+<div class="col span-1-of-3">
+<label for="email">Email</label>
+</div>
+<div class="col span-2-of-3">
+<input type="email" name="email" id="email" placeholder="Your email" required>
+</div>
+</div>
+
+<div class="row">
+<div class="col span-1-of-3">
+<label>Skicka oss ett meddelande</label>
+</div>
+<div class="col span-2-of-3">
+<textarea name="message" placeholder="your message"></textarea>
+</div>
+</div>
+<div class="row">
+<div class="col span-1-of-3">
+<label>&nbsp;</label>
+</div>
+<div class="col span-2-of-3">
+<input type="submit" value="Send it!">
+</div>
+</div>
+</form>
+-->
             </div>
         </section>
 
@@ -552,6 +604,10 @@ Contact Section
         <script src="resources/js/counter.js"></script>
         <script src="resources/js/scroll.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+       <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script> -->
+        <script src="form/main.js"></script>
+
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -33,6 +33,15 @@
     .slinks{
         margin-left: 255px;
     }
+    .messagebox{
+        float: right;
+        margin-right: -60px;
+
+    }
+    .submbutton{
+        margin-left: 160px;
+    }
+
 
 }
 
@@ -74,6 +83,7 @@
     #header-team .row{
         max-width: 90%;
     }
+
 
 
 }
@@ -294,6 +304,17 @@
         margin-left: -150px;
     }
 
+    .messagebox{
+        width: 90%;
+        margin-right: 60px;
+
+    }
+    .messagefields{
+        width: 60%;
+    }
+    .submbutton{
+        margin-left: -183px;
+    }
 
 }
 
@@ -385,6 +406,19 @@
     }
     .footer-top .testa{
         width: 73%;
+    }
+
+    .messagebox{
+        width: 90%;
+        margin-right: 35px;
+
+    }
+    .messagefields{
+        width: 60%;
+    }
+
+    .submbutton{
+        margin-left: -77px;
     }
 
 }
